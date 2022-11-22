@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <script src="lib/ethers-5.6.umd.min.js"></script>
+  <script src="abi.js" defer></script>
+  <script src="main.js" defer></script>
+
+  <link rel="stylesheet" href="style.css">
+  <title>Party Mode</title>
+</head>
+
+<body>
+  
+  <div id="partymode">
+    <h1>Token-Gated Site</h1>
+    <p>Unlock specific functionality if you possess a certain NFT.</p>
+    <hr>
+    <audio id="tunez" src="tunez/Ceephax_Acid_Crew-Commuter.mp3" loop controls></audio>
+    <h1>PARTY MODE ACTIVATED</h1>
+    <h2 id="VIP"></h2>
+    <div class="bg"></div>
+    <img class="party-img" src="party.png" alt="party token image">
+  </div>
+
+  <div id="initContainer">
+    <h1>Token-Gated Site</h1>
+    <p>Unlock specific functionality if you possess a <strong>PARTYMODE</strong> NFT.</p>
+    <hr>
+    <div class="button-container">
+      <button id="connectButton">Connect</button>
+      <span id="loadingIconConnect" class="loading-icon"></span>
+    </div>
+    
+    <p>
+      <strong>Connection Status:</strong> <span id="connectionStatus">🔴 Not connected</span>
+    </p>
+    <p>
+      <strong>Connected Wallet:</strong> <span id="connectedWallet">[No wallet connected]</span>
+    </p>
+
+    <button id="engagePartyMode">Enter Party Mode</button>
+    <div id="sorry">Sorry, looks you don't have a PARTYMODE token ¯\_(ツ)_/¯</div>
+  </div>
+  
+</body>
+
+</html>
