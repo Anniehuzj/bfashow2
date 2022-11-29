@@ -4,32 +4,91 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deleted Memory Cacoon House</title>
+    <title>NFT Website</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
 </head>
+<base href="/">
 <body>
-   <nav class="navbar">
-    <div class="navbar_container">
-        <a href="/" id="navbar_logo">NFT</a>
-        <div class="navbar_toggle"id="monile-menu">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">NFT</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/gallery.html" class="navbar__links">Explore</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Gallery</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/" class="button">Submit</a>
+                </li>
+            </ul>
         </div>
-        <ul class="navbar_menu"></ul>
-        <li class="navbar_item">
-            <a href="/" class="navbar_limks">Home</a>
-        </li>
-        <li class="navbar_item">
-            <a href="/" class="navbar_limks">Caccon No.2</a>
-        </li><li class="navbar_item">
-            <a href="/" class="navbar_limks">Cacoon No.3</a>
-        </li><li class="navbar_item">
-            <a href="/" class="navbar_limks">Cacoon No.4</a>
-        </li>
-    </div>  
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="main">
+        <div class="main__container">
+            <div class="main__content">
+                <h1>The Memory <span class="text-highlight">Get to Removed and Preserved</span> Here</h1>
+                <p>Revisit These Progress</p>
+                <button class="main__btn"><a href="#">View the COCOON</a></button>
+            </div>
+            <div class="main__img--container">
+                <img src="images/2.png" alt="bean" id="main__img"/>
+            </div>
+        </div>
+    </div>
+
+    <!-- Images Section -->
+    <div class="images">
+        <h1>COCOON HOUSE</h1>
+        <div class="images__container">
+            <div class="images__card">
+                <img src="/Users/anniehu/Documents/GitHub/doug/bfashow2/visual/images/angel.png" alt="#">
+                <h2>Beans</h2>
+                <p>Beans #0001</p>
+            </div>
+            <div class="images__card">
+                <h2>Beans</h2>
+                <p>Beans #0002</p>
+            </div>
+            <div class="images__card">
+                <h2>Beans</h2>
+                <p>Beans #0003</p>
+            </div>
+            <div class="images__card">
+                <h2>Beans</h2>
+                <p>Beans #004</p>
+            </div>
+            <div class="images__card">
+                <h2>Beans</h2>
+                <p>Beans #005</p>
+            </div>
+            <div class="images__card">
+                <h2>Beans</h2>
+                <p>Beans #006</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <div class="footer__container">
+        <p class="website__rights">NFT 2022. All rights reserved</p>
+    </div>
+    
+    <script src="app.js"></script>
 </body>
 </html>
