@@ -111,6 +111,8 @@ async function listDestroyedItems() {
 
   // }
   // console.log("test")
+  
+
 
 contract.on("nameSetEvent", (message, newName) => {
 console.log(newName);
@@ -118,11 +120,12 @@ console.log(newName);
   `<div class="images__card">
   <img src="//picsum.photos/id/201/200" alt="#">
   <h1>xxxxxxxxxxxxxxxxxx</h1>
-  <h2>Cocoon</h2>
+  <h2>Caccoon</h2>
   <p>${newName}</p>
 </div>`
 
 $('.images__container').append(nameNode);
 
 })
+
 }
