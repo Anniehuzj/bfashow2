@@ -9,18 +9,34 @@ import "@openzeppelin/contracts@4.8.0/utils/Counters.sol";
 // we need the Strings utility contract to provide the Strings.toString() function used in the safeMint function
 import "@openzeppelin/contracts@4.8.0/utils/Strings.sol";
 
-
-
 contract MintSequentialNFT is ERC721, ERC721URIStorage, Ownable {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("byebye", "BYE") {}
+    constructor() ERC721("ByeBye", "BYE") {}
+
+    string[] names;
+
+    mapping(address => string) public addressToEnterPhrases;
+
+    event nameSetEvent(string message, string newNames);
+
+    function getNames() public view returns (string[] memory) {
+        return names;
+    }
+
+
+    function destroyedPhrase(string memory _inputName) public {
+        addressToEnterPhrases[msg.sender] = _inputName;
+        names.push(_inputName);
+        emit nameSetEvent("A new text was set.", _inputName);
+    }
 
     function _baseURI() internal pure override returns (string memory) {
         // set the baseURI, which will be used later when returning the complete tokenURI
-        return "/Users/anniehu/Documents/GitHub/doug/bfashow/Video/metadata/";
+        return
+            "/Users/anniehu/Documents/GitHub/doug/bfashow2/visual/images/metadata";
     }
 
     function safeMint(address to) public onlyOwner {
@@ -34,7 +50,10 @@ contract MintSequentialNFT is ERC721, ERC721URIStorage, Ownable {
 
     // The following functions are overrides required by Solidity.
 
-    function _burn(uint256 tokenId) internal override(ERC721, ERC721URIStorage) {
+    function _burn(uint256 tokenId)
+        internal
+        override(ERC721, ERC721URIStorage)
+    {
         super._burn(tokenId);
     }
 
