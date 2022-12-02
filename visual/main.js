@@ -71,7 +71,7 @@ function destroyedPhrase() {
 // }
 async function listDestroyedItems() {
  
-  $('.destroyed').empty();
+  // $('.destroyed').empty();
   const phraseList = await contract.getNames();
 
 
@@ -120,10 +120,11 @@ console.log(newName);
   `<div class="images__card">
   <img src="//picsum.photos/id/201/200" alt="#">
   <h1>xxxxxxxxxxxxxxxxxx</h1>
-  <h2>Caccoon</h2>
+  <h2>Cacoon</h2>
   <p>${newName}</p>
 </div>`
 
+console.log(nameNode);
 $('.images__container').append(nameNode);
 
 })
