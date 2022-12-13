@@ -1,0 +1,26 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../../../.Trash/Bean/images"
+		},
+		{
+			"path": "../../../../../Downloads/Blockchain-main/annieMid-2022"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../../../../../Downloads/P5_Arduino_2022_12_06_22_31_43"
+		},
+		{
+			"path": "../../../../../Downloads/cicada_video_2022_12_07_07_01_43"
+		}
+	],
+	"settings": {
+		"liveServer.settings.port": 5501,
+		"liveServer.settings.multiRootWorkspaceName": "bfashow2"
+	}
+}
